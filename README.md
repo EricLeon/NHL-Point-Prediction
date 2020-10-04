@@ -15,7 +15,7 @@ I created a custom function using the official NHL API to collect the data for t
 [season, team, name, birthday, age, nationality, height, weight, number, rookie, position_code, position_type, captain, alternate_capt, handedness, toi, pp_toi, sh_toi, ev_toi, assists, goals, pim, shots, shot_perc, games, hits, blocked, plusminus, shifts, points].
 
 <img src="images/scraping-2.png" height=500 width=800/>
-<img src="images/scraping-1.png" height=400 width=600/>
+<img src="images/scraping-1.png" height=400 width=550/>
 
 
 ## Data Cleaning & Engineering
@@ -41,12 +41,12 @@ Some interesting things I found during this step were:
 - Players with a letter (C or A) on their jersey tend to perform better than players without.
 - Right handed players have more points on average than their left handed counterparts.
 
-<img src="images/eda-2.png" height=400 width=600/>
-<img src="images/eda-1.png" height=400 width=600/>
-<img src="images/eda-6.png" height=400 width=600/>
-<img src="images/eda-3.png" height=400 width=600/>
-<img src="images/eda-4.png" height=400 width=600/>
-<img src="images/eda-5.png" height=400 width=600/>
+<img src="images/eda-2.png" height=550 width=550/>
+<img src="images/eda-1.png" height=600 width=500/>
+<img src="images/eda-6.png" height=600 width=500/>
+<img src="images/eda-3.png" height=350 width=500/>
+<img src="images/eda-4.png" height=350 width=500/>
+<img src="images/eda-5.png" height=350 width=500/>
 
 
 ### Code & Resources Used
