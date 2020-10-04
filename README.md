@@ -44,9 +44,9 @@ Some interesting things I found during this step were:
 <img src="images/eda-2.png" height=550 width=600/>
 <img src="images/eda-1.png" height=600 width=500/>
 <img src="images/eda-6.png" height=600 width=500/>
-<img src="images/eda-3.png" height=450 width=600/>
-<img src="images/eda-4.png" height=450 width=600/>
-<img src="images/eda-5.png" height=450 width=600/>
+<img src="images/eda-3.png" height=450 width=650/>
+<img src="images/eda-4.png" height=500 width=750/>
+<img src="images/eda-5.png" height=500 width=750/>
 
 
 ### Code & Resources Used
