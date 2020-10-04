@@ -52,9 +52,9 @@ Some interesting things I found during this step were:
 <img src="images/eda-2.png" height=600 width=700/>
 <img src="images/eda-1.png" height=600 width=500/>
 <img src="images/eda-6.png" height=700 width=500/>
-<img src="images/eda-3.png" height=400 width=500/>
-<img src="images/eda-4.png" height=400 width=600/>
-<img src="images/eda-5.png" height=400 width=600/>
+<img src="images/eda-3.png" height=400 width=550/>
+<img src="images/eda-4.png" height=550 width=700/>
+<img src="images/eda-5.png" height=550 width=700/>
 
 
 
@@ -93,7 +93,7 @@ Another test I did for my final model was to predict the top 20 performers for t
 
 My idea of the business use for this system would be to run it at the start of each draft round during draft day for my fantasy hockey league. All I would need to make it work would be a list of all of the players that are still available to be drafted. The function I have written would take this list, as well as my finalised regression model and would output a DataFrame sorted in descending order of what players (top 10 out of those who are still available) would be expected to produce the most points; and I would simply select the player at the top of the list. I took a list of random players names to represent a list of those who are still available and passed it to my model, the output would look like:
 
-<img src="images/results-3.png" height=650 width=200/>
+<img src="images/results-3.png" height=650 width=350/>
 
 
 ## Code & Resources Used
