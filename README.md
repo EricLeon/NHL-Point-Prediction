@@ -14,8 +14,8 @@
 I created a custom function using the official NHL API to collect the data for this project. I chose to scrape the data for each season between 2008 and 2018, excluding the lockout year of 2012. This is due to the fact that since the game has changed so much even in the past 10 years, any data further back beyond that I was worried might skew some of our predictions. The features that I ended up extracting via the API were:
 [season, team, name, birthday, age, nationality, height, weight, number, rookie, position_code, position_type, captain, alternate_capt, handedness, toi, pp_toi, sh_toi, ev_toi, assists, goals, pim, shots, shot_perc, games, hits, blocked, plusminus, shifts, points].
 
-<img src="images/scraping-2.png" height=500 width=800/>
-<img src="images/scraping-1.png" height=400 width=550/>
+![](images/scraping-2.png)
+![](images/scraping-1.png)
 
 
 ## Data Cleaning & Engineering
@@ -41,12 +41,11 @@ Some interesting things I found during this step were:
 - Players with a letter (C or A) on their jersey tend to perform better than players without.
 - Right handed players have more points on average than their left handed counterparts.
 
-<img src="images/eda-2.png" height=550 width=600/>
-<img src="images/eda-1.png" height=600 width=500/>
-<img src="images/eda-6.png" height=600 width=500/>
-<img src="images/eda-3.png" height=450 width=650/>
-<img src="images/eda-4.png" height=500 width=750/>
-<img src="images/eda-5.png" height=500 width=750/>
+![](images/eda-2.png)
+![](images/eda-1.png)
+![](images/eda-6.png)
+![](images/eda-3.png)
+![](images/eda-4.png)
 ![](images/eda-5.png)
 
 
@@ -72,13 +71,13 @@ The final performance on each of my tuned models was:
 - Random Forest: RMSE of 5.92
 - Voting Regressor: RMSE of 5.7
 
-![](images/results-1.png)
+<img src="images/results-1.png" height=300 width=550/>
 
 Another test I did for my final model was to predict the top 20 performers for the 2018/19 season and compare my list to the actual top 20 performers for the same season. The results are below, and I was able to predict 15 players who were actually among the leagues top 20.
 
 **Actual Top 20 Performers in 2018/19 Season**            |  **Predicted Top 20 Performers in 2018/19 Season**
 :--------------------------------------------------------:|:--------------------------------------------------:
-![](images/actual-1.png)                                  |  ![](images/predicted-1.png)
+<img src="images/actual-1.png" height=500 width=150/>     |  <img src="images/predicted-1.png" height=500 width=150/> 
 
 
 
