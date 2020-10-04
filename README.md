@@ -10,7 +10,7 @@
 
 
 ### Data Collection
-<img height=400 width = 400>images/scraping-1</image>
+<img height=400 width = 400 src=images/scraping-1>Scraping1</image>
 
 
 ### Data Exploration
@@ -20,7 +20,9 @@
 
 ### Code & Resources Used
 **Python Version:** 3.7
+
 **Python Libraries:** Requests, NumPy, pandas, Matplotlib, Seaborn, Scikit-learn
+
 **Resources:** [Using the NHL API](https://hackernoon.com/retrieving-hockey-stats-from-the-nhls-undocumented-api-zz3003wrw)
 
 
