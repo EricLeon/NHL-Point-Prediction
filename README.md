@@ -15,7 +15,7 @@ I created a custom function using the official NHL API to collect the data for t
 [season, team, name, birthday, age, nationality, height, weight, number, rookie, position_code, position_type, captain, alternate_capt, handedness, toi, pp_toi, sh_toi, ev_toi, assists, goals, pim, shots, shot_perc, games, hits, blocked, plusminus, shifts, points].
 
 ![](images/scraping-2.png)
-<img src="images/scraping-1" height=650 width=500/>
+<img src="images/scraping-1.png" height=650 width=500/>
 
 
 ## Data Cleaning & Engineering
