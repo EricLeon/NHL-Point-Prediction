@@ -8,6 +8,13 @@
 
 ## Framing The Problem
 
+- Objective: Predict the number of total points (goals + assists) a given player is expected to produce in an upcoming NHL season.
+- Why: This prediction will eventually be used to fill out a fantasy NHL in which I participate on an annual basis.
+- This is framed as a supervised multiple regression problem where I can apply batch learning.
+- Some potential enhancement ideas are:
+  - Incorporate some sort of salary data which could act as a proxy for how their GM's expect them to perform.
+  - Use partial season data to forecast performance for the rest of the season so that I can make adjustments to my predictions after any given number of games.
+
 
 ### Data Collection
 
@@ -43,11 +50,11 @@ Some interesting things I found during this step were:
 
 
 <img src="images/eda-2.png" height=600 width=700/>
-<img src="images/eda-1.png" height=700 width=400/>
+<img src="images/eda-1.png" height=600 width=500/>
 <img src="images/eda-6.png" height=700 width=500/>
-<img src="images/eda-3.png" height=600 width=400/>
-<img src="images/eda-4.png" height=600 width=500/>
-<img src="images/eda-5.png" height=600 width=500/>
+<img src="images/eda-3.png" height=400 width=500/>
+<img src="images/eda-4.png" height=400 width=600/>
+<img src="images/eda-5.png" height=400 width=600/>
 
 
 
@@ -82,19 +89,14 @@ Another test I did for my final model was to predict the top 20 performers for t
 <img src="images/actual-1.png" height=650 width=200/>     |  <img src="images/predicted-1.png" height=650 width=200/> 
 
 
+## In Action
 
-### Code & Resources Used
+My idea of the business use for this system would be to run it at the start of each draft round during draft day for my fantasy hockey league. All I would need to make it work would be a list of all of the players that are still available to be drafted. The function I have written would take this list, as well as my finalised regression model and would output a DataFrame sorted in descending order of what players (top 10 out of those who are still available) would be expected to produce the most points; and I would simply select the player at the top of the list. I took a list of random players names to represent a list of those who are still available and passed it to my model, the output would look like:
+
+<img src="images/results-3.png" height=650 width=200/>
+
+
+## Code & Resources Used
 - **Python Version:** 3.7
 - **Python Libraries:** Requests, NumPy, pandas, Matplotlib, Seaborn, Scikit-learn
 - **Resources:** [Using the NHL API](https://hackernoon.com/retrieving-hockey-stats-from-the-nhls-undocumented-api-zz3003wrw)
-
-
-Framing the problem:
-- objective: Predict the number of total points (goals + assists) a given player is expected to achieve in a particular NHL season (82 games).
-- how used? This prediction will eventually be used to fill out a fantasy NHL team given some constraints (12 forwards, 6 defence, for example)
-
-- The data I will be using is labelled and has previous years stats for each player along with their point output.
-
-- For the purposes of this project I will just predict a players output based on similar stats from previous years, however a potential enhancement idea will be to incorporate season-to-date data, which will provide an up to date prediction part way through the season (eventually employ online learning with a high learning rate so that we learn from new information quicker).
-
-- Therefore I have a supervised multiple regression problem, where I can apply batch learning.
