@@ -16,13 +16,31 @@ I created a custom function using the official NHL API to collect the data for t
 season, team, name, birthday, age, nationality, height, weight, number, rookie, position_code, position_type, captain, alternate_capt, handedness, toi, pp_toi, sh_toi, ev_toi, assists, goals, pim, shots, shot_perc, games, hits, blocked, plusminus, shifts, points.
 
 <img src="images/scraping-2.png" height=500 width=800/>
-<img src="images/scraping-1.png" height=400 width=500/>
+<img src="images/scraping-1.png" height=400 width=600/>
 
 
-## Data Exploration
+## Data Cleaning & Engineering
+
+After scraping the data I needed to clean it up in various ways. The modifications I made to the data were:
+
+- Calculated the players *age at the start of each season*. Since the *age* feature I scraped was the players current age (at time of scraping).
+- Transformed the *height* variable from *FT'IN"* to just *Inches* which made it readily available to be passed into the machine learning model.
+- Parsed all of the *time on ice (TOI)* features to represent *Seconds* on the ice, as opposed to *MM:SS*. 
+- Combined the *captain* & *alternate_captain* features into one feature which represented whether or not the player had either of these letters on their sweater.
+- Used a custom built dictionary to map each team to their respective *division* and *conference*.
+- Parsed each players *birthday* and created a feature for their *birth_month* as well as *birth_season*
 
 
-## 
+## Data Visualisation
+
+I explored the distrubutions of various features in our data, and tried to uncover some relationships between any independent variables and our target variable, *points*.
+
+Some interesting things I found during this step were:
+- Players born in the Summer and Fall months tended to have more points per season on average compared to players born in the Spring or Winter months.
+- Players size in the NHL is very normally distributed; meaning most players are roughly around the same size.
+- The strongest correlations with our target variable were *shots* and *powerplay time on ice* which both make a lot of sense.
+- Players with a letter (C or A) on their jersey tend to perform better than players without.
+- Right handed players have more points on average than their left handed counterparts.
 
 ### Code & Resources Used
 **Python Version:** 3.7
