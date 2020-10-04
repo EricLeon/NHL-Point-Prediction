@@ -44,17 +44,15 @@ Some interesting things I found during this step were:
 <img src="images/eda-2.png" height=550 width=600/>
 <img src="images/eda-1.png" height=600 width=500/>
 <img src="images/eda-6.png" height=600 width=500/>
-<img src="images/eda-3.png" height=450 width=550/>
-<img src="images/eda-4.png" height=450 width=550/>
-<img src="images/eda-5.png" height=450 width=550/>
+<img src="images/eda-3.png" height=450 width=600/>
+<img src="images/eda-4.png" height=450 width=600/>
+<img src="images/eda-5.png" height=450 width=600/>
 
 
 ### Code & Resources Used
-**Python Version:** 3.7
-
-**Python Libraries:** Requests, NumPy, pandas, Matplotlib, Seaborn, Scikit-learn
-
-**Resources:** [Using the NHL API](https://hackernoon.com/retrieving-hockey-stats-from-the-nhls-undocumented-api-zz3003wrw)
+- **Python Version:** 3.7
+- **Python Libraries:** Requests, NumPy, pandas, Matplotlib, Seaborn, Scikit-learn
+- **Resources:** [Using the NHL API](https://hackernoon.com/retrieving-hockey-stats-from-the-nhls-undocumented-api-zz3003wrw)
 
 
 Framing the problem:
