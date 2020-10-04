@@ -12,8 +12,7 @@
 ### Data Collection
 
 I created a custom function using the official NHL API to collect the data for this project. I chose to scrape the data for each season between 2008 and 2018, excluding the lockout year of 2012. This is due to the fact that since the game has changed so much even in the past 10 years, any data further back beyond that I was worried might skew some of our predictions. The features that I ended up extracting via the API were:
-
-season, team, name, birthday, age, nationality, height, weight, number, rookie, position_code, position_type, captain, alternate_capt, handedness, toi, pp_toi, sh_toi, ev_toi, assists, goals, pim, shots, shot_perc, games, hits, blocked, plusminus, shifts, points.
+[season, team, name, birthday, age, nationality, height, weight, number, rookie, position_code, position_type, captain, alternate_capt, handedness, toi, pp_toi, sh_toi, ev_toi, assists, goals, pim, shots, shot_perc, games, hits, blocked, plusminus, shifts, points].
 
 <img src="images/scraping-2.png" height=500 width=800/>
 <img src="images/scraping-1.png" height=400 width=600/>
@@ -41,6 +40,14 @@ Some interesting things I found during this step were:
 - The strongest correlations with our target variable were *shots* and *powerplay time on ice* which both make a lot of sense.
 - Players with a letter (C or A) on their jersey tend to perform better than players without.
 - Right handed players have more points on average than their left handed counterparts.
+
+<img src="images/eda-2.png" height=400 width=600/>
+<img src="images/eda-1.png" height=400 width=600/>
+<img src="images/eda-6.png" height=400 width=600/>
+<img src="images/eda-3.png" height=400 width=600/>
+<img src="images/eda-4.png" height=400 width=600/>
+<img src="images/eda-5.png" height=400 width=600/>
+
 
 ### Code & Resources Used
 **Python Version:** 3.7
