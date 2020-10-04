@@ -47,6 +47,7 @@ Some interesting things I found during this step were:
 <img src="images/eda-3.png" height=450 width=650/>
 <img src="images/eda-4.png" height=500 width=750/>
 <img src="images/eda-5.png" height=500 width=750/>
+![](images/eda-5.png)
 
 
 ## Model Building
@@ -71,13 +72,13 @@ The final performance on each of my tuned models was:
 - Random Forest: RMSE of 5.92
 - Voting Regressor: RMSE of 5.7
 
-![](images/results-1)
+![](images/results-1.png)
 
 Another test I did for my final model was to predict the top 20 performers for the 2018/19 season and compare my list to the actual top 20 performers for the same season. The results are below, and I was able to predict 15 players who were actually among the leagues top 20.
 
-Actual Top 20 Performers in 2018/19 Season            |  Predicted Top 20 Performers in 2018/19 Season
-:----------------------------------------------------:|:----------------------------------------------:
-![](images/actual-1.png)                              |  ![](images/predicted-1.png)
+**Actual Top 20 Performers in 2018/19 Season**            |  **Predicted Top 20 Performers in 2018/19 Season**
+:--------------------------------------------------------:|:--------------------------------------------------:
+![](images/actual-1.png)                                  |  ![](images/predicted-1.png)
 
 
 
