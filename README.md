@@ -41,12 +41,12 @@ Some interesting things I found during this step were:
 - Players with a letter (C or A) on their jersey tend to perform better than players without.
 - Right handed players have more points on average than their left handed counterparts.
 
-<img src="images/eda-2.png" height=550 width=550/>
+<img src="images/eda-2.png" height=550 width=600/>
 <img src="images/eda-1.png" height=600 width=500/>
 <img src="images/eda-6.png" height=600 width=500/>
-<img src="images/eda-3.png" height=350 width=500/>
-<img src="images/eda-4.png" height=350 width=500/>
-<img src="images/eda-5.png" height=350 width=500/>
+<img src="images/eda-3.png" height=450 width=500/>
+<img src="images/eda-4.png" height=450 width=500/>
+<img src="images/eda-5.png" height=450 width=500/>
 
 
 ### Code & Resources Used
