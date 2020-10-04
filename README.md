@@ -1,6 +1,14 @@
-# NHL Point Predictions
+# NHL Player Point Prediction: Project Overview
 
-README is Work in Progress - somewhere to keep notes as I go. The final task will be to update this and make it neat and tidy.
+- Optimised a regression model which predicts how many points an NHL player can be expected to achieve next year (RMSE of ~6.7 and r^2 of 91%) which can hopefully help me (and others) find success in fantasy hockey.
+- Used the official NHL API to create a scraped to collect data on every complete NHL season from 2008 through 2018.
+- Visualised the data and engineered features from the scraped data which were used to improve model performance.
+- Built transformation pipelines to take incoming data and convert it to a structure which could be easily ingested by my final model.
+- Trained and tuned the following models: Linear, Lasso, Support Vector Machine, Decision Tree, Random Forest, Voting Regressor.
+
+
+### Code & Resources Used
+**Python Version** 3.7
 
 
 Framing the problem:
