@@ -6,17 +6,23 @@
 - Built transformation pipelines to take incoming data and convert it to a structure which could be easily ingested by my final model.
 - Trained and tuned the following models: Linear, Lasso, Support Vector Machine, Decision Tree, Random Forest, Voting Regressor.
 
-### Framing The Problem
+## Framing The Problem
 
 
 ### Data Collection
-<img src="images/scraping-1.png" height=400 width=400/>
+
+I created a custom function using the official NHL API to collect the data for this project. I chose to scrape the data for each season between 2008 and 2018, excluding the lockout year of 2012. This is due to the fact that since the game has changed so much even in the past 10 years, any data further back beyond that I was worried might skew some of our predictions. The features that I ended up extracting via the API were:
+
+season, team, name, birthday, age, nationality, height, weight, number, rookie, position_code, position_type, captain, alternate_capt, handedness, toi, pp_toi, sh_toi, ev_toi, assists, goals, pim, shots, shot_perc, games, hits, blocked, plusminus, shifts, points.
+
+<img src="images/scraping-2.png" height=500 width=800/>
+<img src="images/scraping-1.png" height=400 width=500/>
 
 
-### Data Exploration
+## Data Exploration
 
 
-### 
+## 
 
 ### Code & Resources Used
 **Python Version:** 3.7
