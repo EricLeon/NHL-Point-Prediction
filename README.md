@@ -49,6 +49,38 @@ Some interesting things I found during this step were:
 <img src="images/eda-5.png" height=500 width=750/>
 
 
+## Model Building
+
+I first split the data into a train set and a test set. For this project I decided to test my models on the last full season of data I had (2018-2019 season) and see if I could use all the seasons prior to that to predict the top performers for that most recent season. So for that reason I held out the 2018/19 data as my testing set, and used all other seasons as the training data. 
+
+I created a transformation pipeline using Scikit-learn transformers to encode my categorical variables, as well as added in some of my own custom transformers to take care of some of the feature engineering that I did. This made predicting new data easier as it ensured every piece of new data that came in was processed and transformed the exact same way.
+
+The models I used were:
+- **Multiple Linear Regression** as a baseline for model performance.
+- **Lasso Regression** as since some of the features were a bit skewed, I thought a normalised model would perform well.
+- **Support Vector, Decision Tree & Random Forest** models for the same reason as the Lasso. Also generally these are more powerful models and tend to perform well.
+- **Voting Regressor** which used soft voting based on all of the previously listed models to arrive at a final prediction.
+
+
+## Model Performance
+
+The final performance on each of my tuned models was:
+- Linear Regression: RMSE of 6.59
+- Lasso Regression: RMSE of 6.58
+- Support Vector Machine: RMSE of 5.56
+- Random Forest: RMSE of 5.92
+- Voting Regressor: RMSE of 5.7
+
+![](images/results-1)
+
+Another test I did for my final model was to predict the top 20 performers for the 2018/19 season and compare my list to the actual top 20 performers for the same season. The results are below, and I was able to predict 15 players who were actually among the leagues top 20.
+
+Actual Top 20 Performers in 2018/19 Season            |  Predicted Top 20 Performers in 2018/19 Season
+:----------------------------------------------------:|:----------------------------------------------:
+![](images/actual-1.png)                              |  ![](images/predicted-1.png)
+
+
+
 ### Code & Resources Used
 - **Python Version:** 3.7
 - **Python Libraries:** Requests, NumPy, pandas, Matplotlib, Seaborn, Scikit-learn
@@ -64,12 +96,3 @@ Framing the problem:
 - For the purposes of this project I will just predict a players output based on similar stats from previous years, however a potential enhancement idea will be to incorporate season-to-date data, which will provide an up to date prediction part way through the season (eventually employ online learning with a high learning rate so that we learn from new information quicker).
 
 - Therefore I have a supervised multiple regression problem, where I can apply batch learning.
-
-
-Getting the data:
-- For this project I found an NHL API which can be used to obtain previous years data. The API is not very well documented however using a source (https://hackernoon.com/retrieving-hockey-stats-from-the-nhls-undocumented-api-zz3003wrw) I was able to piece together how it works. I will need to use multiple API calls to first obtain every teams active roster for a particular season. Once I have the rosters I then make API calls to get player specific information for every player on each roster.
-*NOTE* that this API only contains data on currently active players. Therefore players who have retired will not be included in any years data. 
-
-
-Cleaning the data:
-
