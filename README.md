@@ -10,7 +10,7 @@
 
 
 ### Data Collection
-<img height=400 width = 400 src=images/scraping-1>Scraping1</image>
+<img src="images/scraping-1.png" height=400 width=400/>
 
 
 ### Data Exploration
